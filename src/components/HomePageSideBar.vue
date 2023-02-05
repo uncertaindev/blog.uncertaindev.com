@@ -1,0 +1,111 @@
+<template>
+	<div>
+		<h3 class="text-1xl font-extrabold font-customTitleSerif text-stone-100">
+			Categories
+		</h3>
+		<div class="flex flex-row flex-wrap">
+			<HomePageArticleCategory
+				category="Technology"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Anime"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Art"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Personal"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Movies"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Science fiction"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Games"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Misc"
+				top-margin
+			/>
+		</div>
+
+		<h3 class="mt-4 text-1xl font-extrabold font-customTitleSerif text-stone-100">
+			Tags
+		</h3>
+		<div class="flex flex-row flex-wrap">
+			<HomePageArticleCategory
+				category="Technology"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Anime"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Art"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Personal"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Movies"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Science fiction"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Games"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Misc"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Technology"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Anime"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Art"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Personal"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Movies"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Science fiction"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Games"
+				top-margin
+			/>
+			<HomePageArticleCategory
+				category="Misc"
+				top-margin
+			/>
+		</div>
+	</div>
+</template>

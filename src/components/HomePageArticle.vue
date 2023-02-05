@@ -1,32 +1,38 @@
 <template>
-	<article class="prose-base mt-10">
+	<article class="prose-base mt-15">
 		<router-link
 			:to="`article/${slug}-${id}`"
 		>
-			<h2 class="text-2xl font-extrabold font-customTitleSerif text-stone-50">
+			<h2 class="text-2xl font-extrabold font-customTitleSerif text-stone-50 mb-0">
 				{{ title }}
 			</h2>
+
+			<p class="font-serif text-stone-300 truncate whitespace-normal line-clamp-3">
+				{{ text }}
+			</p>
 		</router-link>
-		<p class="font-serif text-stone-300">
-			{{ text }}
-			<router-link
-				class="text-stone-100 hover:underline transition duration-200 ease-in-out"
-				:to="`article/${slug}-${id}`"
-			>
-				Read more...
-			</router-link>
-		</p>
-		<footer class="font-customTitleSerif font-light text-stone-400">
-			<span class="material-symbols-outlined text-base leading-5 align-top pt-1 ">calendar_month</span> {{ date }} &sdot;
-			<span class="material-symbols-outlined text-base leading-5 align-top pt-1">timer</span> {{ readTime }} &sdot;
-			<span
+		<footer class="font-customTitleSerif font-light text-stone-400 flex-row flex">
+			<div class="material-symbols-outlined text-base leading-5 align-top self-center px-1">
+				calendar_month
+			</div>
+			<div class="self-center">
+				{{ date }} &sdot;
+			</div>
+			<div class="material-symbols-outlined text-base leading-5 align-top self-center px-1">
+				timer
+			</div>
+			<div class="self-center">
+				{{ readTime }} min read &sdot;
+			</div>
+			<div
 				v-for="(category, catId) in categories"
 				:key="`${id}-${catId}`"
 			>
 				<HomePageArticleCategory
 					:category="category"
+					:left-margin="catId === 0"
 				/>
-			</span>
+			</div>
 		</footer>
 	</article>
 </template>
@@ -56,8 +62,8 @@ export default {
 			default: "1979/01/01"
 		},
 		readTime: {
-			type: String,
-			default: "0 min"
+			type: Number,
+			default: 0
 		},
 		categories: {
 			type: Array,

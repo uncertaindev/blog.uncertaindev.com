@@ -8,8 +8,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				logoPrimary: "#73C2FB",
-				logoSecondary: "#fff",
+				primary: "#73C2FB",
+				secondary: "#171717",
 			},
 			fontFamily: {
 				customLogoSerif: [
@@ -28,6 +28,7 @@ module.exports = {
 		},
 	},
 	plugins: [
-		require("@tailwindcss/typography")
+		require("@tailwindcss/typography"),
+		require("@tailwindcss/line-clamp"),
 	],
 };
