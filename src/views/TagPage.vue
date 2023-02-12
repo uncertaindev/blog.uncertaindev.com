@@ -1,10 +1,10 @@
 <template>
-	{{ slug }}
+	<div>{{ slug }}</div>
 </template>
 
 <script>
 export default {
-	name: "CategoryPage",
+	name: "TagPage",
 	props: {
 		slug: {
 			type: String,

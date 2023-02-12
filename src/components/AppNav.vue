@@ -12,7 +12,7 @@
 				Home
 			</li>
 		</router-link>
-		<router-link
+		<!-- <router-link
 			to="/about"
 			:class="{
 				'ml-4 hover:border-primary border-b-2 transition duration-200 ease-in-out': true,
@@ -35,6 +35,6 @@
 			<li class="text-2xl">
 				Contact
 			</li>
-		</router-link>
+		</router-link> -->
 	</ul>
 </template>

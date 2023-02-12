@@ -10,8 +10,14 @@
 				<AppNav />
 			</nav>
 		</header>
-		<main class="mx-10 flex flex-row">
-			<router-view />
-		</main>
+		<div
+			class="content-between grid "
+			style="min-height: calc(100vh - 150px)"
+		>
+			<main class="mx-10 flex flex-row">
+				<router-view />
+			</main>
+			<AppFooter />
+		</div>
 	</div>
 </template>

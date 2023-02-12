@@ -4,17 +4,18 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "vite build",
+		"build": "vite build && react-snap",
 		"dev": "vite",
 		"lint": "eslint --ext .js,.vue src",
 		"lint-fix": "eslint --ext .js,.vue src --fix",
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@vitejs/plugin-vue": "^4.0.0",
+		"@vitejs/plugin-vue2": "^2.2.0",
 		"pinia": "^2.0.30",
-		"vue": "^3.2.47",
-		"vue-router": "^4.1.6"
+		"vue": "^2.7.14",
+		"vue-meta": "^2.4.0",
+		"vue-router": "^3.6.5"
 	},
 	"devDependencies": {
 		"@tailwindcss/line-clamp": "^0.4.2",
