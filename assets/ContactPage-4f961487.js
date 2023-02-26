@@ -1,0 +1,1 @@
+import{n as r}from"./index-3e640714.js";const t={};var _=function(){var n=this,e=n._self._c;return e("div",[n._v("asd")])},a=[],s=r(t,_,a,!1,null,null,null,null);const c=s.exports;export{c as default};
