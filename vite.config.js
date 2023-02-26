@@ -22,5 +22,6 @@ export default defineConfig({
 	plugins: [
 		vue(),
 		Components(),
-	]
+	],
+	base: "./"
 });
