@@ -1,6 +1,5 @@
 <template>
 	<article
-		v-if="article"
 		class="prose-base mt-15"
 	>
 		<router-link
@@ -38,14 +37,6 @@
 			</div>
 		</footer>
 	</article>
-	<div
-		v-else
-		class="prose-base mt-15"
-	>
-		<h2 class="text-2xl font-extrabold font-customTitleSerif text-stone-50 mb-0">
-			There are no articles. Check back again later.
-		</h2>
-	</div>
 </template>
 
 <script>
