@@ -14,7 +14,7 @@ export const useTagStore = defineStore("tag",{
 	actions: {
 		async load() {
 			if (this.tags.length > 0) return;
-			const request = await fetch("http://localhost:1338/api/v1/blog/tags");
+			const request = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/blog/tags`, { headers: { authorization: `Bearer ${import.meta.env.VITE_API_SECRET}`, method: "GET" } });
 
 			const { result } = await request.json();
 
