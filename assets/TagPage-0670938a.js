@@ -1,0 +1,1 @@
+import{n as r}from"./index-807bf945.js";const a={name:"TagPage",props:{slug:{type:String,default:""}}};var s=function(){var n=this,e=n._self._c;return e("div",[n._v(n._s(n.slug))])},t=[],_=r(a,s,t,!1,null,null,null,null);const c=_.exports;export{c as default};
